@@ -1,0 +1,50 @@
+body { 
+  background: white no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.temp-unit-toggle {
+  background: transparent;
+  border: none;
+}
+
+.refresh {
+  margin-left:-44px;
+}
+
+.slow .toggle-group { 
+  transition: left 0.7s; 
+  -webkit-transition: left 0.7s; 
+}
+
+#map{
+  width: 800px;
+  height: 600px;
+}
+
+#earthico{
+  height: 40px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+
+#myModal2{
+  margin-left: -250px;
+  margin-top: 42px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/loader-128x/Preloader_3.gif) center no-repeat #fff;
+}

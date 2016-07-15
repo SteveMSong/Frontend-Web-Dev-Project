@@ -1,0 +1,34 @@
+/*body {
+  background: rgb(29,161,242);
+}
+*/
+.content {
+  /*width: 33%;*/
+  /*border-color:white;*/
+  /*border-style:solid;*/
+  /*border-radius:5px;*/
+  /*margin-top:20px;*/
+  /*padding:20px;*/
+  height:auto;
+  max-width:450px;
+  color:rgb(102,117,127);
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background:white;
+}
+
+p {
+  color: white;
+}
+ 
+blockquote {
+  font-size: 23px;
+}
+
+button:focus { outline:0 !important; }
+
+button {
+  border:none !important;
+}

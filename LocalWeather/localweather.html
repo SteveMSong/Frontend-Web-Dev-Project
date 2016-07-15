@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Local Weather App</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="css/localweather.css">
+    <link rel="shortcut icon" href="image/weather2.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+
+</head>
+<body>
+    <div class="se-pre-con"></div>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <br><br>
+                <h1 style="font-family:'Lobster',cursive;">Local Weather App</h1><br>
+                <div class="weather-content">
+                    <div class="forecast"></div>
+                    <span class="pull-left"><input id="slidebutton" type="checkbox" data-size="small" data-toggle="toggle" data-on="ºC" data-off="ºF" data-style="slow" data-onstyle="danger"></span>
+                    <button class="refresh btn btn-default" onclick="history.go(0)">Refresh</button><br><br>   
+                    <div>Last updated: <span class="lastupdated"></span></div>
+                </div> <!--end weather-content-->
+            </div> <!--end col-xs-6-->
+            <div class="col-sm-3"></div>
+        </div>
+        <!-- Button trigger modal -->
+        <img src="image/earth.ico" id="earthico" data-toggle="modal" data-target="#myModal2">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+              <div class="modal-body">
+                  <div class="img-rounded" id="map"></div>
+              </div>
+          </div>
+        </div>
+    </div> <!--end container-fluid-->
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="js/googlemap.js"></script>
+    <script src="js/localweather.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoCB0dc-0-aFFbNY8qdjp4MpqavAyw4BQ&callback=initMap" async defer></script>
+</body>
+</html>
+

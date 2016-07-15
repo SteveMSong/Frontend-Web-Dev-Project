@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/simon.css">
+    <link rel="shortcut icon" href="images/simon.png">
+
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div id="top-circle" class="well">
+            <div class="main">
+                <div class="quarter quarter1"></div>
+                <div class="quarter quarter2"></div>
+                <div class="quarter quarter3"></div>
+                <div class="quarter quarter4"></div>
+                <div class="cutout"></div>
+            </div>
+            <div id="inner-circle" class="well">
+                <h1>Simon<span id="trademark">®</span></h1>
+                <div id="wrapper">
+                    <div id="display" class="img-rounded">- -</div>
+                    <div id="start"></div>
+                    <div id="strict-wrapper">
+                        <div id="strict-indicator"></div>
+                        <div id="strict"></div>
+                    </div>
+                </div>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; COUNT&nbsp;&nbsp; &nbsp; START &nbsp;STRICT</p>
+                <input id="slide-button" type="checkbox" data-toggle="toggle" data-size="small" data-onstyle="default" data-style="android" data-on="ON" data-off="OFF">
+            </div>
+        </div>
+    </div> <!--end container-fluid-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="js/simon.js"></script>
+</body>
+</html>

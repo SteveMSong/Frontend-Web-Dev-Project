@@ -1,0 +1,23 @@
+img {
+  width: 300px;
+}
+.appendout {
+  background: rgb(238,238,238);
+  max-width: 800px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  border-left-color: transparent;
+  border-left-width: 5px;
+}
+
+.appendout:hover{
+border-left-color:rgb(59,136,195);
+border-left-width: 5px;
+}
+
+.nomatch{
+  background:rgb(217,83,79);
+}

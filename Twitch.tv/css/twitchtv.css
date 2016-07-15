@@ -1,0 +1,33 @@
+body{
+  background: rgb(100,65,164);
+}
+
+.offline{
+  background:rgb(217,83,79);
+}
+
+img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.well{
+  padding: 5px;
+  margin: 2px;
+}
+
+#offlineText {
+  font-family: 'Lobster';
+  font-size: 20px;
+}
+
+#acctClosedTexxt {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+#statusText {
+  font-family: 'Ubuntu';
+}
+

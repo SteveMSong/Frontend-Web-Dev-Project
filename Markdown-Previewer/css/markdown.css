@@ -1,0 +1,12 @@
+body{
+  background: rgb(254,198,50);
+}
+textarea{
+  margin-top: 20px;
+  width: 500px;
+  height: 600px;
+  background: rgb(204,214,221);
+}
+#header{
+  font-family: 'Poiret One', cursive;
+}

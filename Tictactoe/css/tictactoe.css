@@ -1,0 +1,49 @@
+body{
+  background: rgb(51,51,51);
+}
+#toplevel{
+  min-height: 480px;
+  min-width: 480px;
+}
+.block{
+  height: 160px;
+  width: 160px;
+  border-color: rgb(51,51,51);
+  border-width: 4px;
+  background: rgb(252,238,193);
+  border: solid;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 160px;   
+  font-family: "Roboto";
+  font-size: 50px;
+}
+#row1,#row2,#row3{
+  text-align: center;
+}
+h1{
+  font-family: "Roboto";
+  color: white;
+  margin: 40px;
+}
+button{
+  margin-top: 15px;
+}
+.winningRow{
+  background: rgb(29,161,242);
+}
+
+.tie{
+  background: rgb(217,83,79);
+}
+
+.modal-body{
+  font-family: 'Roboto';
+  background: rgb(70,184,218);
+}
+
+.modal-title{
+  font-family: 'Roboto';
+}
+

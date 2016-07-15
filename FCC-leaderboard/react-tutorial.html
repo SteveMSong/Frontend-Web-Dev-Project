@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>React Tutorial</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://fb.me/react-15.1.0.js"></script>
+    <script src="https://fb.me/react-dom-15.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js"></script>
+
+</head>
+<body>
+    <div id="leaderboard"></div>
+    <script type="text/babel">
+      var FriendsContainer = React.createClass({
+        getInitialState: function(){
+          return {
+            name: 'Steve Song',
+            friends: ['Josh Prager','James Li','Sung Park']
+          }
+        },
+        // Invoked once before first render
+        componentWillMount: function(){
+            // Calling setState here does not cause a re-render
+            alert('In Component Will Mount');
+        },
+
+
+        // Invoked once after the first render
+        componentDidMount: function(){
+            // You now have access to this.getDOMNode()
+            alert('In Component Did Mount');
+        },
+
+        // Invoked whenever there is a prop change
+        // Called BEFORE render
+        componentWillReceiveProps: function(nextProps){
+            // Not called for the initial render
+            // Previous props can be accessed by this.props
+            // Calling setState here does not trigger an additional re-render
+            alert('In Component Will Receive Props');
+        },
+
+        // Called IMMEDIATELY before a component is unmounted
+        componentWillUnmount: function(){},
+        addFriend: function(friend){
+          this.setState({
+            friends: this.state.friends.concat([friend])
+          });
+        },
+        render: function(){
+          return (
+            <div>
+              <h3> Name: {this.state.name} </h3>
+              <AddFriend addNew={this.addFriend} />
+              <ShowList names={this.state.friends} />
+            </div>
+          )
+        }
+      });  
+      var AddFriend = React.createClass({
+        getInitialState: function(){
+          return {
+            newFriend: ''
+          }
+        },
+        propTypes: {
+          addNew: React.PropTypes.func.isRequired
+        },
+        updateNewFriend: function(e){
+          this.setState({
+            newFriend: e.target.value
+          });
+        },
+        handleAddNew: function(){
+          this.props.addNew(this.state.newFriend);
+          this.setState({
+            newFriend: ''
+          });
+        },
+        render: function(){
+          return (
+              <div>
+                <input type="text" value={this.state.newFriend} onChange={this.updateNewFriend} />
+                <button onClick={this.handleAddNew} className="btn btn-info btn-sm"> Add Friend </button>
+              </div>
+          );
+        }
+      });
+      var ShowList = React.createClass({
+        getDefaultProps: function(){
+          return {
+            names: []
+          }
+        },
+        render: function(){
+          var listItems = this.props.names.map(function(friend){
+            return <li> {friend} </li>;
+          });
+          return(
+            <div>
+              <h3> Friends </h3>
+              <ul>
+                {listItems}
+              </ul>
+            </div>
+          )
+        }
+      });
+    ReactDOM.render(<FriendsContainer/>,document.getElementById('leaderboard'));
+    </script>
+</body>
+</html>

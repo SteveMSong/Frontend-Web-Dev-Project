@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="css/tictactoe.css">
+    <link rel="shortcut icon" href="image/tictactoe.png">
+
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="toplevel">   
+            <div id="row1">    
+                <div id="top-left" class="block"></div><div id="top-middle" class="block"></div><div id="top-right" class="block"></div>
+            </div>
+            <div id="row2">
+                <div id="middle-left" class="block"></div><div id="middle-middle" class="block"></div><div id="middle-right" class="block"></div>
+            </div>
+            <div id="row3">
+                <div id="bottom-left" class="block"></div><div id="bottom-middle" class="block"></div><div id="bottom-right" class="block"></div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Start
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Start Tic-Tac-Toe</h4>
+              </div>
+              <div class="modal-body">
+                Please select your preference.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success selectX" data-dismiss="modal">X</button>
+                <button type="button" class="btn btn-success selectO" data-dismiss="modal">O</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> <!--end container-fluid-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/tictactoe.js"></script>
+</body>
+</html>

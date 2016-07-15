@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="css/pomodoro.css">
+    <link rel="shortcut icon" href="image/pomodoro.jpg">
+
+</head>
+<body>
+    <div class="container-fluid text-center">
+    <h1>Pomodoro Clock</h1>
+    <div id="controls" class="row container">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3 timer">
+            <div>BREAK LENGTH</div>
+            <button id="breakDecrease" class="btn btn-danger">-</button>
+            <span id="breakTime">5</span>
+            <button id="breakIncrease" class="btn btn-danger">+</button>
+        </div>
+        <div class="col-sm-3 timer">
+            <div>SESSION LENGTH</div>
+            <button id="sessionDecrease" class="btn btn-danger">-</button>
+            <span id="sessionTime">25</span>
+            <button id="sessionIncrease" class="btn btn-danger">+</button>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div id="circle">
+        <canvas id="progress"></canvas>
+        <div id="overlay">
+            <div id="status">Session</div><br><br><br>
+            <div id="time">25:00</div>
+        </div>
+    </div>
+    <div id="description">A Pomodoro clock is based on the Pomodoro theory of productivity, where 25 minutes of work is balanced by a following 5 minutes of rest. After the fourth interval of 25 minutes, a 15 minute break is taken. As it stands, this timer measures the 25 minute work period.</div>
+    </div> <!--end container-fluid-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/waterbubble.min.js"></script>
+    <script src="js/pomodoro.js"></script>
+</body>
+</html>

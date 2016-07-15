@@ -1,0 +1,72 @@
+body{
+  background: rgb(59,136,195);
+}
+h1{
+  font-family: 'Lobster';
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+#status{
+  font-size: 50px;
+}
+#circle{
+  background: rgb(59,136,195);
+  max-height: 350px;
+  min-height: 350px;
+  max-width: 350px;
+  min-width: 350px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 40px;
+  font-family: Roboto;
+  padding: 40px;
+  cursor: pointer;
+  position:relative; /*for canvas*/
+}
+#progress{
+  max-height: 350px;
+  min-height: 350px;
+  max-width: 350px;
+  min-width: 350px;
+/*  border-color: white;
+  border-width: 3px;
+  border-style: solid;*/
+  /*border-radius: 50%;*/
+  /*margin: auto;*/
+  position:absolute;  /*for canvas*/
+  top:-3px; 
+  left:-3px; 
+
+}
+#controls{
+  color: white;
+  font-size: 20px;
+  font-family: Roboto;
+  margin: auto;
+}
+#breakTime{
+  margin: 16px;
+}
+#sessionTime{
+  margin: 16px;
+}
+#time{
+  font-size: 85px;
+}
+#overlay { 
+  margin: auto;  /*for canvas*/
+  padding-left: 4px;
+  padding-top: 5px;
+}
+#description{
+  color: white;
+  font-family: Roboto;
+  max-width: 700px;
+  min-width: 700px;
+  margin:auto;
+  margin-top: 40px;
+}

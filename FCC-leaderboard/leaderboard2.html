@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>FCC Leaderboard</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <link rel="shortcut icon" href="image/fcc.png">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 id="header" class="text-center">Free Code Camp Leaderboard</h1>
+                <table class="table table-striped well table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Camper Name</th>
+                            <th id="recent-header" class="text-center">Points in the past 30 days</th>
+                            <th id="alltime-header" class="text-center">All time points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>               
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div> <!--end container-fluid-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/leaderboard2.js"></script>
+</body>
+</html>

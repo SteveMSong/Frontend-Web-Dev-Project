@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Twitch Streamer</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/twitchtv.css">
+    <link rel="shortcut icon" href="image/twitchlogo.png">
+
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <br><br>
+                    <h1 style="font-family:'Ubuntu',cursive; color:white;">Twitch.tv Streamer</h1><br><br>
+                    <div class="buttons">
+                        <button id="all-button" type="button" class="btn btn-default btn-xs active">ALL</button>
+                        <button id="online-button" type="button" class="btn btn-primary btn-xs">Online</button>
+                        <button id="offline-button" type="button" class="btn btn-danger btn-xs">Offline</button>
+                        <input id="searchbox" type="text" size="15" name="search" maxlength="20"><br><br>
+                    </div>
+                    <div id="output"></div>
+                </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div> <!--end container-fluid-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/twitchtv.js"></script>
+</body>
+</html>

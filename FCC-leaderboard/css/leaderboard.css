@@ -1,0 +1,20 @@
+body{
+  background: rgb(59,136,195);
+  font-family: 'Roboto', cursive;
+  font-size: 20px;
+}
+#header{
+  font-family: 'Bangers', cursive;
+  margin: 25px;
+  font-size: 45px;
+}
+img{
+  height: 40px;
+  margin-right: 7px;
+}
+#recent-header, #alltime-header{
+  cursor: pointer;
+}
+.highlight{
+  background: rgb(254,198,50);
+}
